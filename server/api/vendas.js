@@ -14,6 +14,8 @@ export default defineEventHandler(async (event) => {
       FROM
         vendas v
         LEFT JOIN vendedores ve ON (v.id_vendedor = ve.id)
+      ORDER BY
+        v.criado_em DESC
     `)
     conn.release()
     return rows

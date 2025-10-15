@@ -15,7 +15,6 @@
         :items="dados"
         :headers="headers"
         :loading="carregando"
-        hide-default-footer
       >
         <template v-slot:item.acoes="{ item }">
           <v-icon-btn icon="mdi-delete" @click="apagarVenda(item['#'])" />
