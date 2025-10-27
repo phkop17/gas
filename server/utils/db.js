@@ -1,10 +1,11 @@
 import mariadb from 'mariadb'
 
 const pool = mariadb.createPool({
-  host: 'localhost',
-  user: 'root',
-  password: '153624',
-  database: 'gas',
+  host: 'cloud.exatasoftware.com',
+  port: 33089,
+  user: 'deivis',
+  password: 'dalmzi22',
+  database: 'automacao_andergas',
   connectionLimit: 5
 })
 
